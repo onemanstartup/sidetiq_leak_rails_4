@@ -2,7 +2,7 @@ class X
   include Sidekiq::Worker
   include Sidetiq::Schedulable
 
-  recurrence { minutely }
+  recurrence { hourly }
 
   def perform
   end
